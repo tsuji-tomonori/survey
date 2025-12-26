@@ -111,6 +111,29 @@ description: ML全般の重要概念・キーワード辞書。メモへのリ�
 - 初出論文: -
 - ファクトチェック: 未確認
 
+### LLMエージェント・システム
+
+#### multi-agent-system
+- 定義: 複数のAIエージェントが協調してタスクを解決するシステム。Supervisor-Worker階層構造が一般的
+- 関連メモ: [[multi-agent-system]]
+- 初出論文: -
+- ファクトチェック: 未確認
+- 参照論文: [[P-2501.00750_v2]]（Flowise上のMAS実装）
+
+#### no-code-platform
+- 定義: コーディングなしでAIシステムを構築可能なビジュアル開発プラットフォーム（Flowise、Langflow、n8n等）
+- 関連メモ: [[no-code-platform]]
+- 初出論文: -
+- ファクトチェック: 未確認
+- 参照論文: [[P-2501.00750_v2]]
+
+#### retrieval-augmented-generation
+- 定義: 外部知識ベースからの検索結果を生成モデルに入力として与える手法
+- 関連メモ: [[retrieval-augmented-generation]]
+- 初出論文: RAG (Lewis et al., 2020)
+- ファクトチェック: 未確認
+- 参照論文: [[P-2501.00750_v2]]（Advanced RAG + Web Searchフォールバック）
+
 ---
 
 ## 関連fix Skill
