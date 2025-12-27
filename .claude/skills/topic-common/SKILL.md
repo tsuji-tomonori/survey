@@ -158,6 +158,29 @@ description: 分野横断的な重要概念・キーワードの辞書。メモ�
 - ファクトチェック: 確認済み（2025-12-27）
 - 関連規制: EU AI Act、OECD AI Principles
 
+### サイバーセキュリティ
+
+#### cyber-deception
+- 定義: 攻撃者を欺き、誤誘導し、遅延させることでシステムを防御するセキュリティ技術。Honeypot、Honeytoken、Honeyfileなどの偽装資産を使用
+- 関連メモ: [[cyber-deception]]
+- 初出論文: [[P-2501.00940_v1]]
+- ファクトチェック: 確認済み（2025-12-27）
+- 関連技術: Honeypot, Honeytoken, API Hooking, MITRE ATT&CK
+
+#### structured-prompt-engineering
+- 定義: LLMに対して構造化されたプロンプト（Identity, Goal, Context, Strategy, Example, Output Formatの6要素等）を用いてドメイン特化タスクを実行させる手法
+- 関連メモ: [[cyber-deception]]
+- 初出論文: [[P-2501.00940_v1]]
+- ファクトチェック: 確認済み（2025-12-27）
+- 関連フレームワーク: SPADE（Structured Prompt-based Adaptive Deception Engineering）
+
+#### mitre-attack
+- 定義: MITRE ATT&CK（Adversarial Tactics, Techniques, and Common Knowledge）。攻撃者のTTP（戦術・技術・手順）を体系化したナレッジベース
+- 関連メモ: [[cyber-deception]]
+- 初出論文: [[P-2501.00940_v1]]
+- ファクトチェック: 確認済み（2025-12-27）
+- URL: https://attack.mitre.org/
+
 ---
 
 ## 新規キーワード追加テンプレート
