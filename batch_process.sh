@@ -1,7 +1,7 @@
 #!/bin/bash
 # 論文を2から100まで順番に処理するスクリプト
 
-START=${1:-4}
+START=${1:-12}
 END=${2:-100}
 
 echo "Processing papers from $START to $END"
