@@ -232,6 +232,51 @@ description: 分野横断的な重要概念・キーワードの辞書。メモ�
 - 初出論文: [[P-2501.00965_v1]]
 - ファクトチェック: 確認済み（2025-12-27）
 
+### ストレージ・SSD技術
+
+#### zoned-namespaces
+- 定義: ZNS（Zoned Namespaces）。SSDの内部ゾーン構造をホストに公開し、書き込み順序やGCをホスト側で制御可能にするNVMe規格。順次書き込み強制によりデバイス内GCを削減
+- 関連メモ: [[storage-systems]]
+- 初出論文: [[P-2501.00977_v2]]
+- ファクトチェック: 確認済み（2025-12-27）
+- 関連規格: NVMe 2.0、TP4053
+
+#### flexible-data-placement
+- 定義: FDP（Flexible Data Placement）。NVMe 2.0の機能で、ホストがデータ配置ヒント（Reclaim Group Handle）をデバイスに通知し、関連データの物理的配置を最適化
+- 関連メモ: [[storage-systems]]
+- 初出論文: [[P-2501.00977_v2]]
+- ファクトチェック: 確認済み（2025-12-27）
+- 関連規格: NVMe 2.0 TP4146
+
+#### shim-layer
+- 定義: アプリケーションとOS/ファイルシステムの間に挿入される薄い中間層。既存コンポーネントを変更せずに機能追加や最適化を実現
+- 関連メモ: [[storage-systems]]
+- 初出論文: [[P-2501.00977_v2]]
+- ファクトチェック: 確認済み（2025-12-27）
+- 実装例: LD_PRELOAD、FUSE、VFS
+
+#### ld-preload
+- 定義: Linuxの動的リンカ機能。共有ライブラリを優先的に読み込ませ、libc等の標準関数をカスタム実装でオーバーライド可能にする
+- 関連メモ: [[storage-systems]]
+- 初出論文: [[P-2501.00977_v2]]
+- ファクトチェック: 確認済み（2025-12-27）
+- 用途: システムコールのフック、性能計測、デバッグ
+
+#### lsm-tree
+- 定義: Log-Structured Merge-tree。書き込み最適化データ構造。メモリ上のバッファ（memtable）とディスク上のソート済みファイル（SST）を階層的にマージ
+- 関連メモ: [[storage-systems]]
+- 初出論文: [[P-2501.00977_v2]]
+- ファクトチェック: 確認済み（2025-12-27）
+- 採用システム: RocksDB, LevelDB, Cassandra, MongoDB(WiredTiger)
+- 構成要素: WAL（Write-Ahead Log）、Memtable、SST（Sorted String Table）
+
+#### write-amplification
+- 定義: 書き込み増幅率。ホストからの論理書き込み量に対するデバイス内部の物理書き込み量の比率。SSDの寿命・性能に直結
+- 関連メモ: [[storage-systems]]
+- 初出論文: [[P-2501.00977_v2]]
+- ファクトチェック: 確認済み（2025-12-27）
+- 要因: GC（Garbage Collection）、データ再配置、Over-provisioning
+
 ---
 
 ## 新規キーワード追加テンプレート

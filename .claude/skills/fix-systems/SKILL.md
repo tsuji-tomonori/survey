@@ -109,3 +109,9 @@ description: システム論文（MLSys、分散システム等）メモ作成�
 - **No-Code/Low-Codeプラットフォーム論文**: プラットフォーム制約による複雑なカスタマイズの限界を明記すべき
 - **API依存システム**: 商用API（OpenAI、Replicate等）への依存によるコスト・可用性リスクを記載
 - 参照論文: [[P-2501.00750_v2]]（定量評価なしの典型例）
+
+### 追加チェックポイント（2025-12-27追加）- ストレージ/SSD論文
+- **ZNS/FDP等のSSD技術略語**: 初出時に展開（例: ZNS（Zoned Namespaces）、FDP（Flexible Data Placement））
+- **LD_PRELOAD等のLinux機構**: 動作の簡潔な説明を追加（例: LD_PRELOAD（共有ライブラリを動的に差し替えるLinux機構））
+- **LSM-tree関連用語**: WAL（Write-Ahead Log）、SST（Sorted String Table）等を初出時に展開
+- 参照論文: [[P-2501.00977_v2]]（Valet: シム層ストレージ最適化）
