@@ -129,6 +129,35 @@ description: 分野横断的な重要概念・キーワードの辞書。メモ�
 - 初出論文: -
 - ファクトチェック: 未確認
 
+### AIガバナンス・政策
+
+#### ai-incident-reporting
+- 定義: AIシステムに起因する事故・問題を体系的に収集・分析・共有する仕組み。航空業界のASRS（Aviation Safety Reporting System）をモデルとする
+- 関連メモ: [[AI-governance]]
+- 初出論文: [[P-2501.14778_v1]]
+- ファクトチェック: 確認済み（2025-12-27）
+- 主要データベース: AIID（AI Incident Database）、AIAAIC Repository
+
+#### aiid
+- 定義: AI Incident Database。Partnership on AIが運営するオープンアクセスのAI事故データベース。McGregor (2021)により創設
+- 関連メモ: [[AI-governance]]
+- 初出論文: [[P-2501.14778_v1]]
+- ファクトチェック: 確認済み（2025-12-27）
+- URL: https://incidentdatabase.ai/
+
+#### aiaaic
+- 定義: AI, Algorithmic, and Automation Incidents and Controversies Repository。AIおよびアルゴリズムに関連する事故・論争を収集するデータベース
+- 関連メモ: [[AI-governance]]
+- 初出論文: [[P-2501.14778_v1]]
+- ファクトチェック: 確認済み（2025-12-27）
+
+#### trustworthy-ai
+- 定義: 信頼性のあるAI。OECD AI原則に基づく4要素：公平性（Fairness）、透明性（Transparency）、堅牢性（Robustness）、説明責任（Accountability）
+- 関連メモ: [[AI-governance]]
+- 初出論文: [[P-2501.14778_v1]]
+- ファクトチェック: 確認済み（2025-12-27）
+- 関連規制: EU AI Act、OECD AI Principles
+
 ---
 
 ## 新規キーワード追加テンプレート
