@@ -204,6 +204,34 @@ description: 分野横断的な重要概念・キーワードの辞書。メモ�
 - ファクトチェック: 確認済み（2025-12-27）
 - 関連用語: Inter-slice scheduling, Intra-slice scheduling
 
+### ブロックチェーン・スマートコントラクト
+
+#### proxy-pattern
+- 定義: スマートコントラクトにおいて、ロジック（実装）とストレージ（状態）を分離し、ロジックのアップグレードを可能にするデザインパターン。delegatecallを用いてロジックコントラクトに処理を委譲
+- 関連メモ: [[design-patterns]], [[smart-contracts]]
+- 初出論文: [[P-2501.00965_v1]]
+- ファクトチェック: 確認済み（2025-12-27）
+- 分類: forwarder（転送のみ）、upgradeability（アップグレード可能）
+
+#### delegatecall
+- 定義: EVMの命令。呼び出し元コントラクトのコンテキスト（ストレージ、msg.sender等）を保持したまま、別コントラクトのコードを実行。Proxyパターンの基盤技術
+- 関連メモ: [[smart-contracts]], [[ethereum]]
+- 初出論文: [[P-2501.00965_v1]]
+- ファクトチェック: 確認済み（2025-12-27）
+
+#### erc-standards
+- 定義: Ethereum Request for Comments。スマートコントラクトの標準インターフェースを定義。ERC-20（トークン）、ERC-721（NFT）、ERC-1167（最小Proxy）等
+- 関連メモ: [[smart-contracts]], [[ethereum]]
+- 初出論文: [[P-2501.00965_v1]]
+- ファクトチェック: 確認済み（2025-12-27）
+- 主要標準: ERC-897（DelegateProxy）、ERC-1167（Minimal Proxy）、ERC-1822（UUPS）、ERC-1967（Proxy Storage Slots）
+
+#### eoa
+- 定義: Externally Owned Account。秘密鍵で制御される外部所有アカウント（人間のウォレット）。Contract Account（CA）と対比される
+- 関連メモ: [[ethereum]]
+- 初出論文: [[P-2501.00965_v1]]
+- ファクトチェック: 確認済み（2025-12-27）
+
 ---
 
 ## 新規キーワード追加テンプレート
