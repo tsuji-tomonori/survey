@@ -70,6 +70,13 @@ description: 分野横断的な重要概念・キーワードの辞書。メモ�
 - 初出論文: [[P-2501.01471_v2]]
 - ファクトチェック: 確認済み（2025-12-27）
 
+#### galvanic-skin-response
+- 定義: 皮膚電気反応（GSR）。発汗による皮膚の電気伝導度変化を測定し、自律神経系の活性状態を推定
+- 関連メモ: [[physiological-computing]]
+- 初出論文: [[P-2501.00825_v1]]
+- ファクトチェック: 確認済み（2025-12-27）
+- 別名: EDA（Electrodermal Activity）、皮膚コンダクタンス
+
 ### 計算数学・アルゴリズム
 
 #### collatz-conjecture
@@ -86,7 +93,29 @@ description: 分野横断的な重要概念・キーワードの辞書。メモ�
 - ファクトチェック: 確認済み（2025-12-27）
 - 典型例: n ∧ -n（最下位の1ビット取得）、n & (n-1)（最下位の1ビットをクリア）
 
+### 心理学・人間特性
+
+#### big-five-personality
+- 定義: 性格心理学の5因子モデル。外向性（Extraversion）、協調性（Agreeableness）、誠実性（Conscientiousness）、情緒安定性（Emotional Stability/Neuroticism）、開放性（Openness）の5次元で性格を記述
+- 関連メモ: [[personality-psychology]]
+- 初出論文: [[P-2501.00825_v1]]
+- ファクトチェック: 確認済み（2025-12-27）
+- 評価尺度: IPIP（International Personality Item Pool）Big Five、NEO-PI-R等
+
 ### 評価・分析
+
+#### out-of-bag-error
+- 定義: Random Forestにおける汎化誤差推定手法。ブートストラップサンプリングで選ばれなかったデータ（約37%）を用いて予測誤差を計算
+- 関連メモ: [[random-forest]]
+- 初出論文: [[P-2501.00825_v1]]
+- ファクトチェック: 確認済み（2025-12-27）
+- 利点: 交差検証なしで汎化性能を推定可能
+
+#### boruta-feature-selection
+- 定義: Random Forestベースの特徴選択アルゴリズム。シャドウ特徴（元特徴をシャッフル）との比較で重要な特徴を統計的に選択
+- 関連メモ: [[feature-selection]]
+- 初出論文: [[P-2501.00825_v1]]
+- ファクトチェック: 確認済み（2025-12-27）
 
 #### ablation-study
 - 定義: モデルの各コンポーネントの寄与を個別に評価する実験
