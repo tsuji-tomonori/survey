@@ -181,6 +181,29 @@ description: 分野横断的な重要概念・キーワードの辞書。メモ�
 - ファクトチェック: 確認済み（2025-12-27）
 - URL: https://attack.mitre.org/
 
+### 無線通信・ネットワーク
+
+#### network-slicing
+- 定義: 単一の物理ネットワークインフラ上に、異なる要件を持つ複数の論理ネットワーク（スライス）を仮想的に構築する5G/6Gの核心技術
+- 関連メモ: [[network-slicing]]
+- 初出論文: [[P-2501.00950_v1]]
+- ファクトチェック: 確認済み（2025-12-27）
+- 関連概念: eMBB, URLLC, mMTC, SLA
+
+#### intent-based-networking
+- 定義: 高レベルの意図（インテント）を宣言的に記述し、ネットワークが自動的に設定・最適化を行うパラダイム。TM Forum IG1253等で標準化
+- 関連メモ: [[network-slicing]]
+- 初出論文: [[P-2501.00950_v1]]
+- ファクトチェック: 確認済み（2025-12-27）
+- 関連概念: SLA, Intent Drift, Closed-loop automation
+
+#### ran-slicing
+- 定義: Radio Access Network（RAN）層でのネットワークスライシング。無線リソース（RB/RBG）をスライス間で動的に分配
+- 関連メモ: [[network-slicing]]
+- 初出論文: [[P-2501.00950_v1]]
+- ファクトチェック: 確認済み（2025-12-27）
+- 関連用語: Inter-slice scheduling, Intra-slice scheduling
+
 ---
 
 ## 新規キーワード追加テンプレート
