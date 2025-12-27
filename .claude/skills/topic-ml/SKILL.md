@@ -171,6 +171,43 @@ description: ML全般の重要概念・キーワード辞書。メモへのリ�
 - ファクトチェック: 確認済み（2025-12-27）
 - 参照論文: [[P-2501.00754_v1]]
 
+### 時系列生成・合成データ
+
+#### MMD
+- 定義: Maximum Mean Discrepancy。再生核ヒルベルト空間上で2つの分布間の距離を測る指標。カーネル埋め込みの差のノルムとして計算
+- 関連メモ: [[MMD]]
+- 初出論文: Gretton et al. (2012) "A Kernel Two-Sample Test"
+- ファクトチェック: 確認済み（2025-12-27）
+- 参照論文: [[P-2501.00910_v1]]（PAT損失でCC分布比較に使用）
+
+#### DiT
+- 定義: Diffusion Transformer。U-NetをTransformerで置き換えた拡散モデルアーキテクチャ。AdaLNで条件付けを行う
+- 関連メモ: [[DiT]]
+- 初出論文: Peebles & Xie (2023) "Scalable Diffusion Models with Transformers"
+- ファクトチェック: 確認済み（2025-12-27）
+- 参照論文: [[P-2501.00910_v1]]（Dual-channelの統合に使用）
+
+#### population-level-characteristics
+- 定義: データセット全体の統計的特性（値分布、次元間相関分布など）。個別サンプルの品質とは独立に評価される
+- 関連メモ: [[time-series-generation]]
+- 初出論文: [[P-2501.00910_v1]] (Li et al., 2025)
+- ファクトチェック: 確認済み（2025-12-27）
+- 参照論文: [[P-2501.00910_v1]]
+
+#### VDS
+- 定義: Value Distribution Shift。各次元の値分布のKLダイバージェンス平均。合成データの値分布の真正性を測る
+- 関連メモ: [[time-series-generation]]
+- 初出論文: [[P-2501.00910_v1]] (Li et al., 2025)
+- ファクトチェック: 確認済み（2025-12-27）
+- 参照論文: [[P-2501.00910_v1]]
+
+#### FDDS
+- 定義: Functional Dependency Distribution Shift。次元間相互相関(CC)分布のシフト。機能依存関係の保存度を測る
+- 関連メモ: [[time-series-generation]]
+- 初出論文: [[P-2501.00910_v1]] (Li et al., 2025)
+- ファクトチェック: 確認済み（2025-12-27）
+- 参照論文: [[P-2501.00910_v1]]
+
 ---
 
 ## 関連fix Skill
