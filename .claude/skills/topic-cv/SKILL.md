@@ -142,6 +142,37 @@ CV（コンピュータビジョン）分野の重要な概念・キーワード
 - 初出論文: -（一般的手法）
 - ファクトチェック: 確認済み（2025-12-27）
 
+### トポロジー保存・連結性維持
+
+#### simple-voxel
+- 定義: 除去しても周囲のオブジェクトの連結性を変えないボクセル（デジタルトポロジーの概念）
+- 補足: non-simple voxelは除去するとトポロジーが壊れる＝セグメンテーションエラーの原因
+- 関連メモ: [[simple-voxel]]
+- 初出論文: -（デジタルトポロジーの古典的概念）
+- ファクトチェック: 確認済み（2025-12-27）
+
+#### supervoxel
+- 定義: 連結したボクセルの集合。simple voxelの概念をボクセル集合単位に拡張
+- 補足: 1ボクセルずつの判定より効率的にトポロジーエラーを検出可能
+- 関連メモ: [[supervoxel]]
+- 初出論文: [[P-2501.01022_v3]]（supervoxel-loss）
+- ファクトチェック: 確認済み（2025-12-27）
+
+#### critical-component
+- 定義: 除去すると連結成分数が変わる（トポロジーが壊れる）ボクセル集合
+- 補足: negatively critical = 偽陰性成分で、splitエラーの原因。positively critical = 偽陽性成分で、mergeエラーの原因
+- 関連メモ: [[critical-component]]
+- 初出論文: [[P-2501.01022_v3]]
+- ファクトチェック: 確認済み（2025-12-27）
+
+#### topology-aware-loss
+- 定義: セグメンテーションのトポロジー（連結性、Betti数等）を保存するよう設計された損失関数
+- 補足: persistent homology系（TopoLoss, DMT）、skeleton系（clDice）、voxel系（Gornet, supervoxel-loss）等の分類あり
+- 関連メモ: [[topology-aware-loss]]
+- 初出論文: -（複数手法の総称）
+- ファクトチェック: 確認済み（2025-12-27）
+- 代表手法: TopoLoss, DMT, clDice, Gornet, supervoxel-loss
+
 ### Video Transformer
 
 #### video-transformer
