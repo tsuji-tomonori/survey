@@ -9,7 +9,11 @@ import os
 from pathlib import Path
 from datetime import datetime
 import argparse
-import requests
+"""
+Note: requests is imported lazily inside download_pdf to allow
+running with --no-pdf in environments without network or the
+requests package installed.
+"""
 
 # プロジェクトルート
 PROJECT_ROOT = Path(__file__).parent.parent
@@ -28,6 +32,12 @@ def read_jsonl_line(filepath: Path, line_number: int) -> dict | None:
 
 def download_pdf(arxiv_id: str, output_dir: Path) -> Path | None:
     """arXiv PDFをダウンロード"""
+    # Lazy import so that --no-pdf works without requests installed
+    try:
+        import requests  # type: ignore
+    except Exception as e:
+        print(f"requests not available, skipping PDF download: {e}", file=sys.stderr)
+        return None
     # バージョン番号を除去してPDF URLを構築
     base_id = arxiv_id.split('v')[0] if 'v' in arxiv_id else arxiv_id
     pdf_url = f"https://arxiv.org/pdf/{base_id}.pdf"
