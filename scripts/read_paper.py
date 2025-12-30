@@ -9,7 +9,7 @@ import os
 from pathlib import Path
 from datetime import datetime
 import argparse
-import requests
+# requests is only needed when downloading PDFs. Import lazily in that path
 
 # プロジェクトルート
 PROJECT_ROOT = Path(__file__).parent.parent
@@ -28,6 +28,11 @@ def read_jsonl_line(filepath: Path, line_number: int) -> dict | None:
 
 def download_pdf(arxiv_id: str, output_dir: Path) -> Path | None:
     """arXiv PDFをダウンロード"""
+    try:
+        import requests  # lazy import to avoid hard dependency when --no-pdf
+    except Exception as e:
+        print(f"Error: 'requests' is required to download PDFs but is not available: {e}", file=sys.stderr)
+        return None
     # バージョン番号を除去してPDF URLを構築
     base_id = arxiv_id.split('v')[0] if 'v' in arxiv_id else arxiv_id
     pdf_url = f"https://arxiv.org/pdf/{base_id}.pdf"
