@@ -20,3 +20,15 @@ description: codex用Skill（内容は .claude/skills/topic-cv/SKILL.md に準�
 - 関連メモ: [[neuron-reconstruction]]
 - 初出論文: [[P-2501.01022_v3]]
 - ファクトチェック状態: 確認済み（2025-12-30）
+
+### Articulator dynamics
+- 定義: 発話時の唇や口腔器官の時系列運動パターン。個人識別に有効。
+- 関連メモ: [[lip-biometrics]]
+- 初出論文: [[P-2501.01032_v1]]
+- ファクトチェック状態: 確認済み（2025-12-30）
+
+### Continuous authentication
+- 定義: ログイン後も継続的にユーザーの正当性を監視する認証方式。
+- 関連メモ: [[continuous-authentication]]
+- 初出論文: [[P-2501.01032_v1]]
+- ファクトチェック状態: 確認済み（2025-12-30）
