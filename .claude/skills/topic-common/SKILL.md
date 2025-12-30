@@ -204,6 +204,20 @@ description: 分野横断的な重要概念・キーワードの辞書。メモ�
 - ファクトチェック: 確認済み（2025-12-27）
 - 関連用語: Inter-slice scheduling, Intra-slice scheduling
 
+#### radio-resource-management
+- 定義: 無線アクセスネットワークにおけるRB/RBG、送信電力、スケジューリング等の資源配分最適化の総称（RRM）
+- 関連メモ: [[radio-resource-management]]
+- 初出論文: [[P-2501.00950_v1]]
+- ファクトチェック: 確認済み（2025-12-30）
+- 関連概念: リンク適応、HARQ、パワーコントロール
+
+#### 6g-networks
+- 定義: 次世代移動通信（6G）。超低遅延・高信頼、超高スループット、知能化ネットワーク運用を志向
+- 関連メモ: [[6g-networks]]
+- 初出論文: [[P-2501.00950_v1]]
+- ファクトチェック: 確認済み（2025-12-30）
+- 関連概念: ネットワークスライシング、Intent-based networking、AI for RAN
+
 ### ブロックチェーン・スマートコントラクト
 
 #### proxy-pattern
